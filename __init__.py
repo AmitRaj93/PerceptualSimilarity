@@ -5,6 +5,8 @@ from __future__ import print_function
 import torch
 from .models import dist_model
 
+name="PerceptualSimilarity"
+
 class PerceptualLoss(torch.nn.Module):
     def __init__(self, model='net-lin', net='vgg', use_gpu=True): # VGG using our perceptually-learned weights (LPIPS metric)
     # def __init__(self, model='net', net='vgg', use_gpu=True): # "default" way of using VGG
